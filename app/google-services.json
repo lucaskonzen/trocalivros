@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "701797272624",
+    "firebase_url": "https://trocalivros-da453.firebaseio.com",
+    "project_id": "trocalivros-da453",
+    "storage_bucket": "trocalivros-da453.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701797272624:android:3e8b4a9f8ce9833e",
+        "android_client_info": {
+          "package_name": "lucas.konzen.br.trocalivros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701797272624-eaf5u5897idfis7s50rug3i5utbqjo7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lucas.konzen.br.trocalivros",
+            "certificate_hash": "7FCA92EBE2CFDC6B1A0DB6332F3DD609CDD0CB85"
+          }
+        },
+        {
+          "client_id": "701797272624-tfnr5h0ojmfa46jacvqoq0eqtl27dbc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1v4nephpjVufjBlslzjUSAxmuM7y5Xjg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701797272624-tfnr5h0ojmfa46jacvqoq0eqtl27dbc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
