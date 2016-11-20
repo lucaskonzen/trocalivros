@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if(firebaseAuth.getCurrentUser()!= null){
             //atividade perfil aqui
             finish();
-            startActivity(new Intent(getApplicationContext(),Perfil.class ));
+            startActivity(new Intent(getApplicationContext(),TelaPrincipal.class ));
         }
 
         buttonSignin = (Button) findViewById(R.id.buttonSigin);
@@ -86,7 +86,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                         if(task.isSuccessful()){
                             // incicia a atividade perfil
                             finish();
-                            startActivity(new Intent(getApplicationContext(),Perfil.class ));
+                            startActivity(new Intent(getApplicationContext(),TelaPrincipal.class ));
 
                         }
                     }
@@ -100,7 +100,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             userLogin();
         }
         if(view == textViewSignup){
-            startActivity(new Intent(this ,Registro.class));
+            startActivity(new Intent(this ,RegistroUsuario.class));
         }
     }
 }

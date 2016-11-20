@@ -1,31 +1,20 @@
 <resources>
-    <string name="app_name">Troca Livros</string>
+    <string name="app_name">Flying Book</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_tela_principal">flying book</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
 
     <string-array name="estados_nomes">
         <item>Estado</item>
         <item>DF</item>
         <item>MG</item>
     </string-array>
-
-    <string-array name="cidades_DF">
-        <item>Cidades</item>
-        <item>Brasilia</item>
-        <item>Taguatinga</item>
-        <item>Nucleo Bandeirante</item>
-        <item>Samambaia</item>
-        <item>Ceilandia</item>
-    </string-array>
-
-    <string-array name="cidades_MG">
-        <item>Cidades</item>
-        <item>Buritis</item>
-        <item>Arinos</item>
-        <item>Montes Claros</item>
-        <item>Uberlandia</item>
-        <item>Belo Horizonte</item>
-    </string-array>
-
-
 
 
 

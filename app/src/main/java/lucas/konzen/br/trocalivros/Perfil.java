@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
+//import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,8 +25,8 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
     private TextView textViewUserEmail;
     private Button buttonLogout;
     private EditText editTextNome;
-    private Spinner spinnerEstado;
-    private Spinner spinnerCidade;
+    //private Spinner spinnerEstado;
+   // private Spinner spinnerCidade;
     private Button buttonSalvar;
 
     ArrayAdapter<CharSequence> adapter;
@@ -54,13 +54,13 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
         textViewUserEmail.setText(user.getEmail());
 
         editTextNome =(EditText) findViewById(R.id.editTextNome);
-        spinnerEstado =(Spinner) findViewById(R.id.spinnerEstado);
+       /* spinnerEstado =(Spinner) findViewById(R.id.spinnerEstado);
         spinnerCidade =(Spinner) findViewById(R.id.spinnerCidade);
 
         adapter = ArrayAdapter.createFromResource(this,R.array.estados_nomes,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerEstado.setAdapter(adapter);
-
+        */
 
 
         buttonSalvar = (Button) findViewById(R.id.buttonSalvar);
@@ -70,7 +70,7 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
         buttonLogout.setOnClickListener(this);
         buttonSalvar.setOnClickListener(this);
 
-        spinnerEstado.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+      /*  spinnerEstado.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
@@ -81,7 +81,7 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
-        });
+        });*/
 
 
 

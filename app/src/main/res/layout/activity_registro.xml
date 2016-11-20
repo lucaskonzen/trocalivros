@@ -8,9 +8,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="lucas.konzen.br.trocalivros.Registro">
+    tools:context="lucas.konzen.br.trocalivros.RegistroUsuario">
 
     <LinearLayout
+
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:orientation="vertical"
@@ -21,7 +22,7 @@
         <EditText
             android:layout_margin="15dp"
             android:inputType="textEmailAddress"
-            android:hint="Digite seu Email"
+            android:hint="Email"
             android:id="@+id/edtTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -30,7 +31,7 @@
         <EditText
              android:layout_margin="15dp"
              android:inputType="textPassword"
-             android:hint="Digite sua Senha"
+             android:hint="Senha"
              android:id="@+id/edtTextSenha"
              android:layout_width="match_parent"
              android:layout_height="wrap_content" />
@@ -61,9 +62,11 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/livros3"
-        android:id="@+id/imageView3"
-        android:layout_above="@+id/linearLayout2" />
+        app:srcCompat="@drawable/book"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/imageView4" />
 
 
 </RelativeLayout>
