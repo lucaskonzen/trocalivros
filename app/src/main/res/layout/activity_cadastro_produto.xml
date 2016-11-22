@@ -15,8 +15,22 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:weightSum="1"
         android:layout_alignParentTop="true"
-        android:weightSum="1">
+        android:layout_alignParentLeft="true">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add_a_photo_black_24dp"
+            android:id="@+id/imageButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:layout_weight="0.54"
+           android:onClick="onImageGalleryClicked"
+            android:nestedScrollingEnabled="true"
+            />
 
         <EditText
             android:layout_width="match_parent"
@@ -37,24 +51,16 @@
             android:text="Descrição"
             android:hint="Descrição" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+        <Button
+            android:text="postar anuncio"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:weightSum="1">
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorBotao"
 
-            <Button
-                android:text="Cancelar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/button2" />
+            android:id="@+id/button3" />
 
-            <Button
-                android:text="postar anuncio"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/button3"
-                android:layout_weight="0.40" />
-        </LinearLayout>
     </LinearLayout>
+
+
 </RelativeLayout>

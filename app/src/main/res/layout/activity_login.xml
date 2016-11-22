@@ -42,7 +42,8 @@
             android:id="@+id/buttonSigin"
             android:text="Entrar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@color/colorBotao"/>
 
         <TextView
             android:textAlignment="center"

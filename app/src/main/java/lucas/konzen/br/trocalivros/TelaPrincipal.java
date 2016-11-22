@@ -68,14 +68,18 @@ public class TelaPrincipal extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        // chama fragment maps e coloca no container da tela principal
+
+
         fragmentManager = getSupportFragmentManager();
 
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        // chama fragment maps e coloca no container da tela principal
+       // if(savedInstanceState == null){
+           FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-        transaction.add(R.id.container, new MapsFragment(),"MapsFragment");
+             transaction.add(R.id.container, new MapsFragment(),"MapsFragment");
 
-        transaction.commitAllowingStateLoss();
+             transaction.commitAllowingStateLoss();
+       // }
 
     }
 
@@ -113,6 +117,7 @@ public class TelaPrincipal extends AppCompatActivity
 
     private void showFragment (Fragment fragment, String name){
 
+
         FragmentTransaction transaction = fragmentManager.beginTransaction();
 
         transaction.add(R.id.container, fragment, name);
@@ -134,16 +139,21 @@ public class TelaPrincipal extends AppCompatActivity
             case R.id.nav_mapa:
                 showFragment(new MapsFragment(),"MapsFragments");
                 break;
+
             case R.id.nav_novo_anuncio:
-                showFragment(new Fragment(),"CadastroProduto");
-
-
+                showFragment(new CadastroProduto(),"CadastroProduto");
                 break;
+
             case R.id.nav_meus_anuncios:
-
                 break;
-            case R.id.nav_mensagens:
 
+            case R.id.nav_mensagens:
+                break;
+
+            case R.id.nav_logoff:
+                firebaseAuth.signOut();
+                finish();
+                startActivity(new Intent(this,Login.class));
                 break;
         }
 

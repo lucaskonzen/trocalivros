@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
         <item
@@ -17,7 +18,18 @@
         <item
             android:id="@+id/nav_mensagens"
             android:icon="@drawable/ic_message_black_24dp"
-            android:title="Mensagens" />
-    </group>
+            android:title="Mensagens" ></item>
+    </group >
 
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logoff"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Logoff" />
+
+        </menu>
+    </item>
 </menu>
+
+
