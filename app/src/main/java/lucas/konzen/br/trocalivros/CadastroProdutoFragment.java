@@ -20,7 +20,7 @@ import java.io.InputStream;
 
 
 
-public class CadastroProduto extends Fragment {
+public class CadastroProdutoFragment extends Fragment {
 
 
 

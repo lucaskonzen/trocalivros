@@ -13,14 +13,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
-public class TelaPrincipal extends AppCompatActivity
+public class TelaPrincipalActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private FirebaseAuth firebaseAuth;
@@ -41,7 +37,7 @@ public class TelaPrincipal extends AppCompatActivity
         //estou logado?
         if(firebaseAuth.getCurrentUser() == null){
             finish();
-            startActivity(new Intent(this,Login.class));
+            startActivity(new Intent(this,LoginActivity.class));
         }
 
        // FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -141,7 +137,7 @@ public class TelaPrincipal extends AppCompatActivity
                 break;
 
             case R.id.nav_novo_anuncio:
-                showFragment(new CadastroProduto(),"CadastroProduto");
+                showFragment(new CadastroProdutoFragment(),"CadastroProdutoFragment");
                 break;
 
             case R.id.nav_meus_anuncios:
@@ -153,7 +149,7 @@ public class TelaPrincipal extends AppCompatActivity
             case R.id.nav_logoff:
                 firebaseAuth.signOut();
                 finish();
-                startActivity(new Intent(this,Login.class));
+                startActivity(new Intent(this,LoginActivity.class));
                 break;
         }
 

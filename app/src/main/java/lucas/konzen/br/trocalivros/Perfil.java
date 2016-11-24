@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,7 +41,7 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
         //estou logado?
         if(firebaseAuth.getCurrentUser() == null){
             finish();
-            startActivity(new Intent(this,Login.class));
+            startActivity(new Intent(this,LoginActivity.class));
         }
 
         FirebaseUser user =firebaseAuth.getCurrentUser();
@@ -107,7 +106,7 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
         if(view == buttonLogout){
             firebaseAuth.signOut();
             finish();
-            startActivity(new Intent(this,Login.class));
+            startActivity(new Intent(this,LoginActivity.class));
         }
         if(view == buttonSalvar){
             salvarInformacaoUsuario();

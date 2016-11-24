@@ -17,7 +17,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Login extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     private Button buttonSignin;
@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if(firebaseAuth.getCurrentUser()!= null){
             //atividade perfil aqui
             finish();
-            startActivity(new Intent(getApplicationContext(),TelaPrincipal.class ));
+            startActivity(new Intent(getApplicationContext(),TelaPrincipalActivity.class ));
         }
 
         buttonSignin = (Button) findViewById(R.id.buttonSigin);
@@ -86,7 +86,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                         if(task.isSuccessful()){
                             // incicia a atividade perfil
                             finish();
-                            startActivity(new Intent(getApplicationContext(),TelaPrincipal.class ));
+                            startActivity(new Intent(getApplicationContext(),TelaPrincipalActivity.class ));
 
                         }
                     }
@@ -100,7 +100,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             userLogin();
         }
         if(view == textViewSignup){
-            startActivity(new Intent(this ,RegistroUsuario.class));
+            startActivity(new Intent(this ,RegistroUsuarioActivity.class));
         }
     }
 }

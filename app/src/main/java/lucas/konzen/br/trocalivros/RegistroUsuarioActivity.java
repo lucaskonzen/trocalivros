@@ -21,7 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-public class RegistroUsuario extends AppCompatActivity implements View.OnClickListener{
+public class RegistroUsuarioActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button butonRegister;
     private EditText editTextEmail;
@@ -48,7 +48,7 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
         if(firebaseAuth.getCurrentUser()!= null){
             //atividade principal aqui
             finish();
-            startActivity(new Intent(getApplicationContext(),TelaPrincipal.class ));
+            startActivity(new Intent(getApplicationContext(),TelaPrincipalActivity.class ));
         }
 
         FirebaseUser user =firebaseAuth.getCurrentUser();
@@ -119,13 +119,13 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
 
 
                                 finish();
-                               startActivity(new Intent(getApplicationContext(),TelaPrincipal.class ));
+                               startActivity(new Intent(getApplicationContext(),TelaPrincipalActivity.class ));
                            }
 
                         }
                         else {
 
-                            Toast.makeText(RegistroUsuario.this,"Erro ao registrar", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistroUsuarioActivity.this,"Erro ao registrar", Toast.LENGTH_SHORT).show();
                         }
                         progressDialog.dismiss();
                     }
@@ -158,7 +158,7 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
             registerUser();
         }
         if (view == textViewSignin) {
-            startActivity(new Intent(this,Login.class));
+            startActivity(new Intent(this,LoginActivity.class));
         }
 
 
