@@ -76,7 +76,7 @@ public class TelaPrincipal extends AppCompatActivity
        // if(savedInstanceState == null){
            FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-             transaction.add(R.id.container, new MapsFragment(),"MapsFragment");
+             transaction.replace(R.id.container, new MapsFragment(),"MapsFragment");
 
              transaction.commitAllowingStateLoss();
        // }
@@ -120,7 +120,7 @@ public class TelaPrincipal extends AppCompatActivity
 
         FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-        transaction.add(R.id.container, fragment, name);
+        transaction.replace(R.id.container, fragment, name);
 
         transaction.commit();
 
